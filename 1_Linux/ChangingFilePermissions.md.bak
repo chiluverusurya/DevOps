@@ -1,4 +1,4 @@
-# File Permissions (Access modes)
+#File Permissions (Access modes)
 
 Permissions are applied at three levels.
 	- Owner or user levels
@@ -28,12 +28,12 @@ File types available in linux operating system.
 | d | directory |
 | l | link files (short cut ) |
 
-# Changing Permissions
+#Changing Permissions
 Permissions can be set on any file or directory by using two methods
 	* Symbolic method (ugo)
 	* Absolute method (numbers)
 
-### Symbolic Method:
+###Symbolic Method:
 
 We use symbols u, g, o.
 ```
@@ -48,7 +48,7 @@ Example:
 or
 > chmod ugo=rwx <file_name>
 
-### Absolute Method:
+###Absolute Method:
 
 We use numbers instead of sylmbols
 
