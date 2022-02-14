@@ -20,4 +20,3 @@ ln -s <src_file> <dest_file>
 * If original file is deleted then also link will contain data.
 ```
 ln <src_file> <dest_file>
-```
