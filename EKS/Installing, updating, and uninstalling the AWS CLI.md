@@ -14,7 +14,8 @@ We provide the steps in one easy to copy and paste group based on whether you us
 
 Use the curl command – The -o option specifies the file name that the downloaded package is written to. The options on the following example command write the downloaded file to the current directory with the local name awscliv2.zip.
 
-***Linux x86 (64-bit):***```
+***Linux x86 (64-bit):***
+```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 ```
 ***Linux ARM:***
