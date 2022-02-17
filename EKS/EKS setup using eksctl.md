@@ -25,7 +25,7 @@ Set up a group with the Permissions of:
 3. AWSCloudFormationFullAccess
 
 You also need to create an inline policy, using the following:
-
+```
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -44,7 +44,7 @@ You also need to create an inline policy, using the following:
     }
   ]
 }
-
+```
 
 ### Add a user to the group
 
