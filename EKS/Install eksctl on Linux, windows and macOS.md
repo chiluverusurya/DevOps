@@ -10,7 +10,7 @@ Install or upgrade the latest version of the eksctl command line utility.
 
 #### To install or upgrade eksctl on Linux using curl
 
-*** Linux: ***
+**Linux:**
 
 1. Download and extract the latest release of eksctl with the following command.
 ```
@@ -28,7 +28,7 @@ eksctl version
 
 #### To install or upgrade eksctl on Windows using Chocolatey
 
-*** Windows: ***
+**Windows:**
 
 1. If you do not already have Chocolatey installed on your Windows system, see [Installing Chocolatey](https://chocolatey.org/install).
 2. Install or upgrade `eksctl`.
@@ -45,11 +45,11 @@ choco upgrade -y eksctl
 eksctl version
 ```
 
-> **Note:** The GitTag version should be at least 0.83.0. If not, check your terminal output for any installation or upgrade errors, or manually download an archive of the release from https://github.com/weaveworks/eksctl/releases/download/v0.83.0/eksctl_Windows_amd64.zip, extract eksctl, and then run it.
+> ***Note:*** The GitTag version should be at least 0.83.0. If not, check your terminal output for any installation or upgrade errors, or manually download an archive of the release from https://github.com/weaveworks/eksctl/releases/download/v0.83.0/eksctl_Windows_amd64.zip, extract eksctl, and then run it.
 
 #### To install or upgrade eksctl on macOS using Homebrew
 
-*** MacOs: ***
+**MacOs:**
 
 The easiest way to get started with Amazon EKS and macOS is by installing `eksctl` with [Homebrew](https://brew.sh/). The eksctl Homebrew recipe installs eksctl and any other dependencies that are required for Amazon EKS, such as `kubectl`. The recipe also installs the [aws-iam-authenticator](https://docs.aws.amazon.com/eks/latest/userguide/install-aws-iam-authenticator.html), which is required if you don't have the AWS CLI version 1.16.156 or higher installed.
 
@@ -76,4 +76,4 @@ brew upgrade eksctl && brew link --overwrite eksctl
 eksctl version
 ```
 
-> ** Note: ** The GitTag version should be at least 0.83.0. If not, check your terminal output for any installation or upgrade errors, or manually download an archive of the release from https://github.com/weaveworks/eksctl/releases/download/v0.83.0/eksctl_Darwin_amd64.tar.gz, extract eksctl, and then run it.
+> ***Note:*** The GitTag version should be at least 0.83.0. If not, check your terminal output for any installation or upgrade errors, or manually download an archive of the release from https://github.com/weaveworks/eksctl/releases/download/v0.83.0/eksctl_Darwin_amd64.tar.gz, extract eksctl, and then run it.
