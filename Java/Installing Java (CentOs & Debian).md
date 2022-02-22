@@ -30,6 +30,12 @@ yum install -y java-1.8*
 apt-get install -y openjdk-8-jdk
 ```
 
+If you want to install Java 11:
+
+```sh
+sudo apt install openjdk-11-jdk
+```
+
 ## Check for installed java version
 
 ```sh
@@ -48,9 +54,13 @@ Output would be like `/usr/bin/java` (This is default installation path of java)
 
 Check the path of your java installation
 
+***CentOs/Debian:***
+
 ```sh
 find /usr/lib/jvm/java-1.8* | head -n 3
 ```
+
+***CentOs:***
 
 Output would be like:
 
@@ -60,9 +70,19 @@ Output would be like:
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64
 ```
 
-Copy the java path in 3rd line of output
+***Debian:***
 
-## Set "JAVA_HOME" as environment variable in "/etc/profile" or "~/.bash_profile"
+Output would be like:
+
+```text
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64
+```
+
+## Set "JAVA_HOME" as environment variable
+
+***CentOs:***
+
+Copy the java path in 3rd line of output and save it in "/etc/profile" or "~/.bash_profile"
 
 ```sh
 vi /etc/profile
@@ -74,7 +94,15 @@ or
 vi ~/.bash_profile
 ```
 
-Add below statements at the end of "profile" file
+***Debian:***
+
+Copy the correct java path of output and save it in "/etc/environment"
+
+```sh
+vi /etc/environment
+```
+
+Add below statements at the end of the file
 
 ```sh
 JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-0.amzn2.x86_64"
@@ -82,9 +110,12 @@ PATH=$PATH:$HOME/bin:$JAVA_HOME:$JAVA_HOME/bin
 ```
 
 save & close the file (by using :wq!)
+
 > ***Note:*** provide your correct Java installation path
 
 ## Reload the configuration file
+
+***CentOs:***
 
 ```sh
 source /etc/profile
@@ -94,6 +125,12 @@ or
 
 ```sh
 source ~/.bash_profile
+```
+
+***Debian:***
+
+```sh
+source /etc/environment
 ```
 
 ## Now check the path
