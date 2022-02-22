@@ -30,7 +30,7 @@ Whenever a user is created in linux, below things will happen by default.
 
 The syntax for creating a user in linux is:
 
-```bash
+```sh
 useradd <option> <username>
 ```
 
@@ -43,7 +43,7 @@ Options are:
 - c - comment
 - s - shell
 
-```bash
+```sh
 useradd <USER_NAME>
 passwd <USER_NAME>
 ```
@@ -59,7 +59,7 @@ passwd: all authentication tokens updated successfully.
 
 ## To list Users
 
-```bash
+```sh
 cat /etc/passwd
 ```
 
@@ -75,7 +75,7 @@ In "/etc/passwd" group information will be shown as
 
 login as root and enter below command:
 
-```bash
+```sh
 userdel <USER_NAME>
 ```
 
@@ -83,7 +83,7 @@ userdel <USER_NAME>
 
 Adding a user to another group
 
-```bash
+```sh
 usermod <option> <dest_group> <username>
 ```
 
@@ -97,6 +97,6 @@ To create password for that user execute command ```passwd <username>```
 
 |To switch to the another user execute below command
 
-```bash
+```sh
 sudo su - <user_name>
 ```

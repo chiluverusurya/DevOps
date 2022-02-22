@@ -2,7 +2,7 @@
 
 > ***Note***: Only root user can change the ownership of a file or a directory
 
-```bash
+```sh
 chown <user>:<group> <filename>
 ```
 

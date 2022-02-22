@@ -41,7 +41,7 @@ Permissions can be set on any file or directory by using two methods
 
 We use symbols u, g, o.
 
-```bash
+```sh
 chmod [who] [+/-/=] [permissions] <file_name>
 ```
 
@@ -61,7 +61,7 @@ Read    - 4
 Write   - 2
 Execute - 1
 
-```bash
+```sh
 chmod <numbers> <file_name>
 ```
 

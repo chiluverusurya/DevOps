@@ -4,7 +4,7 @@
 
 ***Note:*** Always use visudo to edit sudoers file
 
-```bash
+```sh
 sudo visudo
 ```
 
@@ -32,7 +32,7 @@ This means that our root user can run any command using sudo, without providing 
 
 Open the sshd_config file to enable password based login
 
-```bash
+```sh
 vi /etc/ssh/sshd_config
 ```
 
@@ -42,7 +42,7 @@ vi /etc/ssh/sshd_config
 
 Reload the file to effect the changes by executing below command.
 
-```bash
+```sh
 service sshd reload
 ```
 

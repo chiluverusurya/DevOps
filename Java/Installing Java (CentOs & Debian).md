@@ -2,7 +2,7 @@
 
 To check whether java is installed or not execute the below command.
 
-```bash
+```sh
 java -version
 ```
 
@@ -48,7 +48,7 @@ Output would be like `/usr/bin/java` (This is default installation path of java)
 
 Check the path of your java installation
 
-```bash
+```sh
 find /usr/lib/jvm/java-1.8* | head -n 3
 ```
 

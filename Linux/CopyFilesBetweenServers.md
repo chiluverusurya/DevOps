@@ -8,7 +8,7 @@
 
 * scp (secure copy) is a command-line utility that allows you to securely copy file and directories between two systems.
 
-```bash
+```sh
 scp <source_file_name> username@<dest_host>:<dest_folder>
 ```
 
@@ -21,6 +21,6 @@ copy file from remote server to local server
 
 ### To copy directories use flag with argument "r"
 
-```bash
+```sh
 scp -r <src_dir> usr@hostname:/<dest_folder>
 ```
