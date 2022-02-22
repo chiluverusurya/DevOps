@@ -48,7 +48,7 @@ Output would be like `/usr/bin/java` (This is default installation path of java)
 
 Check the path of your java installation
 
-```sh
+```bash
 find /usr/lib/jvm/java-1.8* | head -n 3
 ```
 
