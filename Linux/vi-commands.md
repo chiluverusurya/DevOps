@@ -24,7 +24,8 @@
 | ~ | Change case of individual character. |
 | / | Search for a pattern or word. |
 
-### Moving within a file.
+## Moving within a file
+
 | Command | Description |
 | :-----: | :---------- |
 | k | Move cursor up. |
@@ -33,7 +34,8 @@
 | l | Move cursor right. |
 | G | Move cursor to the end of the file. |
 
-### Saving and closing the file.
+## Saving and closing the file
+
 | Command | Description |
 | :-----: | :---------- |
 | ZZ | Save the file and quit. |

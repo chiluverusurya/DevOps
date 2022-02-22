@@ -1,14 +1,16 @@
 # File Permissions (Access modes)
 
 Permissions are applied at three levels.
-	- Owner or user levels
-	- Group levels
-	- Others level
+
+- Owner or user levels
+- Group levels
+- Others level
 
 Permissions are applied in three ways.
-	- r - read only
-	- w - write/edit/append/delete
-	- x - execute/run
+
+- r - read only
+- w - write/edit/append/delete
+- x - execute/run
 
 Access modes are different on file and directory
 
@@ -28,15 +30,18 @@ File types available in linux operating system.
 | d | directory |
 | l | link files (short cut ) |
 
-# Changing Permissions
-Permissions can be set on any file or directory by using two methods
-	* Symbolic method (ugo)
-	* Absolute method (numbers)
+## Changing Permissions
 
-### Symbolic Method:
+Permissions can be set on any file or directory by using two methods
+
+- Symbolic method (ugo)
+- Absolute method (numbers)
+
+### Symbolic Method
 
 We use symbols u, g, o.
-```
+
+```bash
 chmod [who] [+/-/=] [permissions] <file_name>
 ```
 
@@ -48,19 +53,19 @@ Example:
 or
 > chmod ugo=rwx <file_name>
 
-### Absolute Method:
+### Absolute Method
 
 We use numbers instead of sylmbols
 
-Read	- 4
-Write	- 2
-Execute	- 1
+Read    - 4
+Write   - 2
+Execute - 1
 
-```
+```bash
 chmod <numbers> <file_name>
 ```
 
 Example:
->chmod 764 <file_name>
+> chmod 764 <file_name>
 
 Note: To change permission you should either be the owner of the file or a root user.
