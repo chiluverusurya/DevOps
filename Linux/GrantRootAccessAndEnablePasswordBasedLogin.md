@@ -22,7 +22,7 @@ This means that our root user can run any command using sudo, as long as they pr
 4. Third “ALL” indicates that the root user can run commands as all groups.
 5. The last “ALL” indicates these rules apply to all commands
 
-```bash
+```text
 <USER_NAME> ALL=(ALL) NOPASSWD: ALL
 ```
 
