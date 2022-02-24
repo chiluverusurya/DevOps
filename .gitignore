@@ -1,11 +1,7 @@
-git/*
-
-Maven/*
-Jenkins/*
 JfrogArtifactory/*
 SonarQube/*
 Tomcat/*
-Ansible/*
+Ansible/playbooks/*
 Docker/*
 Grafana/*
 Kubernetes/*
