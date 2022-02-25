@@ -34,6 +34,7 @@ Note: This Article written for SonarQube6.0
 
 ```sh
 cd /opt
+apt install unzip
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.7.52159.zip
 unzip sonarqube-8.9.7.52159.zip
 mv sonarqube-8.9.7.52159 sonar
