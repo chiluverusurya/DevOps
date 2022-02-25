@@ -33,7 +33,7 @@ apt-get install -y openjdk-8-jdk
 If you want to install Java 11:
 
 ```sh
-sudo apt install openjdk-11-jdk
+apt-get install openjdk-11-jdk
 ```
 
 ## Check for installed java version
