@@ -110,6 +110,8 @@ WORKING TILL NOW
 mysql -h <RDS_Instance_endpoint> -u <DB_USER_NAME> -p
 ```
 
+> ***Note:***If still not connecting to database then try changing source to Anywhere in the rds security group inbound rules
+
 ## Create a new sonar database
 
 ```sh
