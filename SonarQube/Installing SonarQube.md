@@ -7,7 +7,7 @@
 
 Note:
 Update: for some reasons java-1.8/java8 not works then install java 11/java-openjdk11
-search in amazon-linux-extras by execting a command "amazon-linux-extras install java-openjdk11"
+For Amazon Linux search in amazon-linux-extras by executing a command "amazon-linux-extras install java-openjdk11"
 
 ## Install MySQL client version
 
@@ -23,14 +23,11 @@ For Debian:
 sudo apt install mysql-server
 ```
 
-Secure
+## Download & install SonarQube
 
 Download stable SonarQube version from official website.
 
 Website: <https://www.sonarqube.org/downloads/>
-Note: This Article written for SonarQube6.0
-
-## Download & install SonarQube
 
 ```sh
 cd /opt
@@ -102,15 +99,13 @@ Connect to RDS instance with database credentials
 mysql -h <RDS_Instance_endpoint>:3306 -u <DB_USER_NAME> -p <DB_PASSWORD>
 ```
 
-***Note:*** Sometimes port number and DB_PASSWORD may not required and can be used as below
-
-WORKING TILL NOW
+***Note:*** Sometimes port number and DB_PASSWORD may not be required and can be used as below
 
 ```sh
 mysql -h <RDS_Instance_endpoint> -u <DB_USER_NAME> -p
 ```
 
-> ***Note:***If still not connecting to database then try changing source to Anywhere in the rds security group inbound rules
+> ***Note:***If still not connecting to database then try changing source to `Anywhere` in the rds security group inbound rules
 
 ## Create a new sonar database
 
@@ -155,7 +150,7 @@ Find and edit below commands in the file
 ```sh
 sonar.jdbc.username=sonar
 sonar.jdbc.password=sonar
-sonar.jdbc.url=jdbc:mysql://<RDS_DATABAE_ENDPOINT>:3306/sonar?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
+sonar.jdbc.url=jdbc:mysql://<RDS_DATABAE_ENDPOINT>:3306?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
 sonar.web.host=0.0.0.0
 sonar.web.context=/
 sonar.web.port=9000
@@ -169,9 +164,9 @@ cd /opt/sonar/bin/linux-x86-64/
 ./sonar.sh start
 ```
 
-> Run SonarQube as a default service
+## Run SonarQube as a default service (OPTIONAL)
 
-## Implement SonarQube server as a service
+### Implement SonarQube server as a service
 
 Copy `sonar.sh` to `etc/init.d/sonar` and modify it according to your platform.
 
@@ -213,4 +208,4 @@ Default Password: admin
 ## Troubleshooting
 
 * Check whether you enabled port 9000 in EC2 instance security group
-* Check whether you enabled EC2 instance IP range in RDS security group
+* Check whether you enabled EC2 instance IP range in RDS security group and inbound rules to Anywhere.
