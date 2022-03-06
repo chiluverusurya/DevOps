@@ -25,7 +25,8 @@ Set up a group with the Permissions of:
 3. AWSCloudFormationFullAccess
 
 You also need to create an inline policy, using the following:
-```
+
+```sh
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -51,11 +52,13 @@ You also need to create an inline policy, using the following:
 Use the console to add a user to your new group, and then use "aws configure" to input the credentials
 
 Configure the AWS credentials using the below command
-```
+
+```sh
 aws configure
 ```
 
 ## Start Your Cluster
-```
+
+```sh
 eksctl create cluster --name <CLUSTER_NAME> --nodes-min=<NO_OF_WORKER_NODES_IN NUMERIC>
 ```
