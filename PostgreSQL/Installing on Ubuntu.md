@@ -4,6 +4,8 @@
 
 PostgreSQL is available in all Ubuntu versions by default. However, Ubuntu "snapshots" a specific version of PostgreSQL that is then supported throughout the lifetime of that Ubuntu version. Other versions of PostgreSQL are available through the PostgreSQL apt repository.
 
+> For Official Documention visit [postgresql.org](https://www.postgresql.org/download/linux/ubuntu/)
+
 ## PostgreSQL Apt Repository
 
 If the version included in your version of Ubuntu is not the one you want, you can use the `PostgreSQL Apt Repository`. This repository will integrate with your normal systems and patch management, and provide automatic updates for all supported versions of PostgreSQL throughout the support lifetime of PostgreSQL.
