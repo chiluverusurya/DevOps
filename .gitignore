@@ -1,5 +1,4 @@
 Ansible/playbooks/*
-Docker/*
 Grafana/*
 Kubernetes/*
 Promotheus/*
